@@ -7,6 +7,7 @@
  *   /reference_path  (nav_msgs/Path)             -> 全局参考路径（局部坐标 x,y；yaw 取四元数）
  *   /vehicle_pose    (geometry_msgs/PoseStamped) -> 当前车辆位姿（局部坐标）
  *        -> TEB 局部窗口优化 (plannerManager)
+ *        -> /optimized_path (nav_msgs/Path)       <- 优化后的局部轨迹（发布出来便于观察）
  *        -> AckermannController 由 TEB 结果换算后轮线速度 + 前轮绝对转角
  *        -> AckermannControlInterface::sendCommand()（由使用方实现）
  *
@@ -68,6 +69,7 @@ public:
         sub_pose_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             pose_topic_, 10,
             std::bind(&TebAckermannNode::poseCallback, this, std::placeholders::_1));
+        pub_optimized_path_ = this->create_publisher<nav_msgs::msg::Path>("/optimized_path", 10);
 
         timer_ = this->create_wall_timer(
             std::chrono::duration<double>(params_.control_period),
@@ -302,10 +304,13 @@ private:
             return;
         }
 
-        // 2) 由 TEB 结果换算阿克曼指令（后轮线速度 + 前轮绝对转角）
+        // 2) 发布优化后的局部轨迹（nav_msgs/Path）
+        publishOptimizedPath(optimized_traj);
+
+        // 3) 由 TEB 结果换算阿克曼指令（后轮线速度 + 前轮绝对转角）
         const AckermannCommand cmd = controller_.computeCommand(current_pose_, optimized_traj);
 
-        // 3) 下发（实现由使用方提供）
+        // 4) 下发（实现由使用方提供）
         if (control_api_)
         {
             control_api_->sendCommand(cmd);
@@ -316,6 +321,26 @@ private:
                              "未注入 AckermannControlInterface，指令只计算不下发"
                              "（见 main() 中的注释示例）");
         }
+    }
+
+    // 优化结果 -> nav_msgs/Path，发布到 /optimized_path（便于 RViz 观察）
+    void publishOptimizedPath(const std::vector<tools::pathInfo>& traj)
+    {
+        nav_msgs::msg::Path path;
+        path.header.frame_id = "map";
+        path.header.stamp    = this->now();
+        path.poses.reserve(traj.size());
+        for (const auto& p : traj)
+        {
+            geometry_msgs::msg::PoseStamped ps;
+            ps.header = path.header;
+            ps.pose.position.x     = p.x;
+            ps.pose.position.y     = p.y;
+            ps.pose.orientation.z  = std::sin(0.5 * p.theta);
+            ps.pose.orientation.w  = std::cos(0.5 * p.theta);
+            path.poses.push_back(ps);
+        }
+        pub_optimized_path_->publish(path);
     }
 
     // 四元数 -> yaw
@@ -350,6 +375,7 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr sub_scan_;
     rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr sub_path_;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr sub_pose_;
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr pub_optimized_path_;
     rclcpp::TimerBase::SharedPtr timer_;
 
     std::vector<tools::pathInfo> reference_path_;       // 参考路径（局部坐标）
