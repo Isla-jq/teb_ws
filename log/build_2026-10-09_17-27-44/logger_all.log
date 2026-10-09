@@ -1,0 +1,259 @@
+[0.055s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.055s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=28, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x75cf42be05c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75cf42be0290>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75cf42be0290>>, mixin_verb=('build',))
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.073s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/isla/code/teb_ws'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extensions ['ignore', 'ignore_ament_install']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extension 'ignore'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extension 'ignore_ament_install'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extensions ['colcon_pkg']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extension 'colcon_pkg'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extensions ['colcon_meta']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extension 'colcon_meta'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extensions ['ros']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_decode) by extension 'ros'
+[0.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/can_decode' with type 'ros.ament_python' and name 'can_decode'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extension 'ignore_ament_install'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extensions ['colcon_pkg']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extension 'colcon_pkg'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extensions ['colcon_meta']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extension 'colcon_meta'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extensions ['ros']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_ackermann_planner) by extension 'ros'
+[0.091s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teb_ackermann_planner' with type 'ros.ament_cmake' and name 'teb_ackermann_planner'
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.104s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 384 installed packages in /opt/ros/jazzy
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'cmake_args' from command line to 'None'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'cmake_target' from command line to 'None'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'cmake_clean_cache' from command line to 'False'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'cmake_clean_first' from command line to 'False'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'cmake_force_configure' from command line to 'False'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'ament_cmake_args' from command line to 'None'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'catkin_cmake_args' from command line to 'None'
+[0.126s] Level 5:colcon.colcon_core.verb:set package 'can_decode' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.126s] DEBUG:colcon.colcon_core.verb:Building package 'can_decode' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/isla/code/teb_ws/build/can_decode', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/isla/code/teb_ws/install/can_decode', 'merge_install': False, 'path': '/home/isla/code/teb_ws/src/can_decode', 'symlink_install': False, 'test_result_base': None}
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.127s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/isla/code/teb_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/isla/code/teb_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/isla/code/teb_ws/src/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'cmake_target' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'teb_ackermann_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.127s] DEBUG:colcon.colcon_core.verb:Building package 'teb_ackermann_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/isla/code/teb_ws/build/teb_ackermann_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/isla/code/teb_ws/install/teb_ackermann_planner', 'merge_install': False, 'path': '/home/isla/code/teb_ws/src/teb_ackermann_planner', 'symlink_install': False, 'test_result_base': None}
+[0.127s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.128s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.128s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/isla/code/teb_ws/src/can_decode' with build type 'ament_python'
+[0.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_decode', 'ament_prefix_path')
+[0.129s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/can_decode/share/can_decode/hook/ament_prefix_path.ps1'
+[0.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/isla/code/teb_ws/install/can_decode/share/can_decode/hook/ament_prefix_path.dsv'
+[0.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/can_decode/share/can_decode/hook/ament_prefix_path.sh'
+[0.130s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.130s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.132s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/isla/code/teb_ws/src/rplidar_ros' with build type 'ament_cmake'
+[0.132s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/isla/code/teb_ws/src/rplidar_ros'
+[0.132s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.132s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.133s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/isla/code/teb_ws/src/teb_ackermann_planner' with build type 'ament_cmake'
+[0.133s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/isla/code/teb_ws/src/teb_ackermann_planner'
+[0.133s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.133s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.257s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/isla/code/teb_ws/src/can_decode'
+[0.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/isla/code/teb_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/isla/code/teb_ws/install/rplidar_ros
+[0.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/build/teb_ackermann_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/isla/code/teb_ws/src/teb_ackermann_planner -DCMAKE_INSTALL_PREFIX=/home/isla/code/teb_ws/install/teb_ackermann_planner
+[0.691s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: extract_messages, build_ext, build_clib, install_lib, install_headers, upload, dist_info, build_py, compile_catalog, editable_wheel, install_scripts, setopt, register, install, bdist_egg, easy_install, install_data, egg_info, develop, sdist, check, test, bdist_rpm, init_catalog, saveopts, bdist, bdist_wheel, clean, symlink_data, build, rotate, alias, update_catalog, upload_docs, build_scripts, install_egg_info, bdist_dumb
+[0.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/src/can_decode': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/isla/code/teb_ws/build/can_decode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/can_decode build --build-base /home/isla/code/teb_ws/build/can_decode/build install --record /home/isla/code/teb_ws/build/can_decode/install.log --install-scripts $base/lib/can_decode --single-version-externally-managed install_data
+[1.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/src/can_decode' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/isla/code/teb_ws/build/can_decode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/can_decode build --build-base /home/isla/code/teb_ws/build/can_decode/build install --record /home/isla/code/teb_ws/build/can_decode/install.log --install-scripts $base/lib/can_decode --single-version-externally-managed install_data
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode' for CMake module files
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode' for CMake config files
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode/lib'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode/bin'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode/lib/pkgconfig/can_decode.pc'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages'
+[1.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_decode', 'pythonpath')
+[1.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/can_decode/share/can_decode/hook/pythonpath.ps1'
+[1.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/isla/code/teb_ws/install/can_decode/share/can_decode/hook/pythonpath.dsv'
+[1.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/can_decode/share/can_decode/hook/pythonpath.sh'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/can_decode/bin'
+[1.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_decode)
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/can_decode/share/can_decode/package.ps1'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/isla/code/teb_ws/install/can_decode/share/can_decode/package.dsv'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/can_decode/share/can_decode/package.sh'
+[1.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/can_decode/share/can_decode/package.bash'
+[1.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/can_decode/share/can_decode/package.zsh'
+[1.018s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/isla/code/teb_ws/install/can_decode/share/colcon-core/packages/can_decode)
+[1.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/isla/code/teb_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/isla/code/teb_ws/install/rplidar_ros
+[1.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/isla/code/teb_ws/build/rplidar_ros -- -j28 -l28
+[1.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/build/teb_ackermann_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/isla/code/teb_ws/src/teb_ackermann_planner -DCMAKE_INSTALL_PREFIX=/home/isla/code/teb_ws/install/teb_ackermann_planner
+[1.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/build/teb_ackermann_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/isla/code/teb_ws/build/teb_ackermann_planner -- -j28 -l28
+[5.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/isla/code/teb_ws/build/rplidar_ros -- -j28 -l28
+[5.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/isla/code/teb_ws/build/rplidar_ros
+[5.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[5.603s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros' for CMake module files
+[5.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/isla/code/teb_ws/build/rplidar_ros
+[5.604s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros' for CMake config files
+[5.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[5.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[5.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[5.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/lib'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/bin'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/lib/python3.12/site-packages'
+[5.606s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/bin'
+[5.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[5.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[5.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[5.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[5.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[5.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/isla/code/teb_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[5.607s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[5.607s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros' for CMake module files
+[5.607s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros' for CMake config files
+[5.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[5.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[5.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[5.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[5.608s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/lib'
+[5.608s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/bin'
+[5.608s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[5.608s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/lib/python3.12/site-packages'
+[5.608s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/rplidar_ros/bin'
+[5.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[5.609s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[5.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[5.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[5.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[5.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/isla/code/teb_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[12.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/build/teb_ackermann_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/isla/code/teb_ws/build/teb_ackermann_planner -- -j28 -l28
+[12.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/isla/code/teb_ws/build/teb_ackermann_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/isla/code/teb_ws/build/teb_ackermann_planner
+[12.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teb_ackermann_planner)
+[12.050s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner' for CMake module files
+[12.050s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/isla/code/teb_ws/build/teb_ackermann_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/isla/code/teb_ws/build/teb_ackermann_planner
+[12.050s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner' for CMake config files
+[12.050s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_ackermann_planner', 'cmake_prefix_path')
+[12.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/hook/cmake_prefix_path.ps1'
+[12.051s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/hook/cmake_prefix_path.dsv'
+[12.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/hook/cmake_prefix_path.sh'
+[12.051s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/lib'
+[12.051s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/bin'
+[12.051s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/lib/pkgconfig/teb_ackermann_planner.pc'
+[12.051s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/lib/python3.12/site-packages'
+[12.051s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/bin'
+[12.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.ps1'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.dsv'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.sh'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.bash'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.zsh'
+[12.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/isla/code/teb_ws/install/teb_ackermann_planner/share/colcon-core/packages/teb_ackermann_planner)
+[12.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teb_ackermann_planner)
+[12.053s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner' for CMake module files
+[12.053s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner' for CMake config files
+[12.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_ackermann_planner', 'cmake_prefix_path')
+[12.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/hook/cmake_prefix_path.ps1'
+[12.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/hook/cmake_prefix_path.dsv'
+[12.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/hook/cmake_prefix_path.sh'
+[12.053s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/lib'
+[12.053s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/bin'
+[12.053s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/lib/pkgconfig/teb_ackermann_planner.pc'
+[12.054s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/lib/python3.12/site-packages'
+[12.054s] Level 1:colcon.colcon_core.environment:checking '/home/isla/code/teb_ws/install/teb_ackermann_planner/bin'
+[12.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.ps1'
+[12.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.dsv'
+[12.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.sh'
+[12.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.bash'
+[12.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.zsh'
+[12.055s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/isla/code/teb_ws/install/teb_ackermann_planner/share/colcon-core/packages/teb_ackermann_planner)
+[12.055s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.055s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.055s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.055s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.059s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.059s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.059s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.072s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.072s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/isla/code/teb_ws/install/local_setup.ps1'
+[12.073s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/isla/code/teb_ws/install/_local_setup_util_ps1.py'
+[12.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/isla/code/teb_ws/install/setup.ps1'
+[12.074s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/isla/code/teb_ws/install/local_setup.sh'
+[12.074s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/isla/code/teb_ws/install/_local_setup_util_sh.py'
+[12.074s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/isla/code/teb_ws/install/setup.sh'
+[12.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/isla/code/teb_ws/install/local_setup.bash'
+[12.075s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/isla/code/teb_ws/install/setup.bash'
+[12.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/isla/code/teb_ws/install/local_setup.zsh'
+[12.076s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/isla/code/teb_ws/install/setup.zsh'

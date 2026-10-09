@@ -1,0 +1,5 @@
+.marscode
+.vscode
+build/
+install/
+logs/

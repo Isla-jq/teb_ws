@@ -1,0 +1,21 @@
+[ 18%] Built target gtest
+[ 36%] Built target gtest_main
+[ 72%] Built target teb_ackermann_node
+[100%] Built target test_teb_planner
+-- Install configuration: ""
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/lib/teb_ackermann_planner/teb_ackermann_node
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/ament_index/resource_index/package_run_dependencies/teb_ackermann_planner
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/ament_index/resource_index/parent_prefix_path/teb_ackermann_planner
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/ament_prefix_path.sh
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/path.sh
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/path.dsv
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.bash
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.sh
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.zsh
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.dsv
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.dsv
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/ament_index/resource_index/packages/teb_ackermann_planner
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/cmake/teb_ackermann_plannerConfig.cmake
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/cmake/teb_ackermann_plannerConfig-version.cmake
+-- Up-to-date: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.xml

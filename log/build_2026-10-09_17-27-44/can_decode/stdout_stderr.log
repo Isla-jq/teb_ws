@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/can_decode/can_decode.egg-info
+writing ../../build/can_decode/can_decode.egg-info/PKG-INFO
+writing dependency_links to ../../build/can_decode/can_decode.egg-info/dependency_links.txt
+writing entry points to ../../build/can_decode/can_decode.egg-info/entry_points.txt
+writing requirements to ../../build/can_decode/can_decode.egg-info/requires.txt
+writing top-level names to ../../build/can_decode/can_decode.egg-info/top_level.txt
+writing manifest file '../../build/can_decode/can_decode.egg-info/SOURCES.txt'
+reading manifest file '../../build/can_decode/can_decode.egg-info/SOURCES.txt'
+writing manifest file '../../build/can_decode/can_decode.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/isla/code/teb_ws/build/can_decode/build
+creating /home/isla/code/teb_ws/build/can_decode/build/lib
+creating /home/isla/code/teb_ws/build/can_decode/build/lib/can_decode
+copying can_decode/__init__.py -> /home/isla/code/teb_ws/build/can_decode/build/lib/can_decode
+copying can_decode/can_decode.py -> /home/isla/code/teb_ws/build/can_decode/build/lib/can_decode
+running install
+running install_lib
+creating /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode
+copying /home/isla/code/teb_ws/build/can_decode/build/lib/can_decode/__init__.py -> /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode
+copying /home/isla/code/teb_ws/build/can_decode/build/lib/can_decode/can_decode.py -> /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode
+byte-compiling /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode/can_decode.py to can_decode.cpython-312.pyc
+running install_data
+creating /home/isla/code/teb_ws/install/can_decode/share/ament_index
+creating /home/isla/code/teb_ws/install/can_decode/share/ament_index/resource_index
+creating /home/isla/code/teb_ws/install/can_decode/share/ament_index/resource_index/packages
+copying resource/can_decode -> /home/isla/code/teb_ws/install/can_decode/share/ament_index/resource_index/packages
+copying package.xml -> /home/isla/code/teb_ws/install/can_decode/share/can_decode
+creating /home/isla/code/teb_ws/install/can_decode/share/can_decode/launch
+copying launch/can.launch.py -> /home/isla/code/teb_ws/install/can_decode/share/can_decode/launch
+copying can_decode/ugv.dbc -> /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode
+running install_egg_info
+Copying ../../build/can_decode/can_decode.egg-info to /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode-0.0.0-py3.12.egg-info
+running install_scripts
+Installing can_decode script to /home/isla/code/teb_ws/install/can_decode/lib/can_decode
+writing list of installed files to '/home/isla/code/teb_ws/build/can_decode/install.log'

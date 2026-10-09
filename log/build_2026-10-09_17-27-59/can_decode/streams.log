@@ -1,0 +1,21 @@
+[0.467s] Invoking command in '/home/isla/code/teb_ws/src/can_decode': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/isla/code/teb_ws/build/can_decode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/can_decode build --build-base /home/isla/code/teb_ws/build/can_decode/build install --record /home/isla/code/teb_ws/build/can_decode/install.log --install-scripts $base/lib/can_decode --single-version-externally-managed install_data
+[0.613s] running egg_info
+[0.625s] writing ../../build/can_decode/can_decode.egg-info/PKG-INFO
+[0.625s] writing dependency_links to ../../build/can_decode/can_decode.egg-info/dependency_links.txt
+[0.625s] writing entry points to ../../build/can_decode/can_decode.egg-info/entry_points.txt
+[0.625s] writing requirements to ../../build/can_decode/can_decode.egg-info/requires.txt
+[0.625s] writing top-level names to ../../build/can_decode/can_decode.egg-info/top_level.txt
+[0.648s] reading manifest file '../../build/can_decode/can_decode.egg-info/SOURCES.txt'
+[0.648s] writing manifest file '../../build/can_decode/can_decode.egg-info/SOURCES.txt'
+[0.648s] running build
+[0.648s] running build_py
+[0.649s] running install
+[0.652s] running install_lib
+[0.664s] running install_data
+[0.664s] running install_egg_info
+[0.676s] removing '/home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode-0.0.0-py3.12.egg-info' (and everything under it)
+[0.676s] Copying ../../build/can_decode/can_decode.egg-info to /home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages/can_decode-0.0.0-py3.12.egg-info
+[0.676s] running install_scripts
+[0.748s] Installing can_decode script to /home/isla/code/teb_ws/install/can_decode/lib/can_decode
+[0.748s] writing list of installed files to '/home/isla/code/teb_ws/build/can_decode/install.log'
+[0.761s] Invoked command in '/home/isla/code/teb_ws/src/can_decode' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/isla/code/teb_ws/build/can_decode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/isla/code/teb_ws/install/can_decode/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/can_decode build --build-base /home/isla/code/teb_ws/build/can_decode/build install --record /home/isla/code/teb_ws/build/can_decode/install.log --install-scripts $base/lib/can_decode --single-version-externally-managed install_data

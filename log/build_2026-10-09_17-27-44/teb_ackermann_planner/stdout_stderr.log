@@ -1,0 +1,239 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[33mCMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindOpenGL.cmake:381 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /opt/ros/jazzy/lib/cmake/g2o/g2oConfig.cmake:6 (find_dependency)
+  CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/isla/code/teb_ws/src/teb_ackermann_planner/include>;/home/isla/code/teb_ws/src/teb_ackermann_planner/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/isla/code/teb_ws/build/teb_ackermann_planner
+[  9%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/teb_ackermann_node.dir/src/teb_ackermann_node.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/teb_ackermann_node.dir/src/planner_manager.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/teb_ackermann_node.dir/src/ackermann_controller.cpp.o[0m
+[ 54%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 54%] Built target gtest_main
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:12[m[K,
+                 from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/src/planner_manager.cpp:5[m[K:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:42:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:43:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:84:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:85:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:11[m[K:
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 1; E = double; VertexXi = teb_local_planner::VertexTimeDiff; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebMultiEdge<D, E>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = double; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  172 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebBinaryEdge<D, E, VertexXi, VertexXj>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = double; VertexXi = teb_local_planner::VertexPoseSE2; VertexXj = teb_local_planner::VertexPoseSE2; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:140:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:140:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  140 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = tools::pathInfo; VertexXi = teb_local_planner::VertexPoseSE2; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 1; E = tools::obstacleInfo; VertexXi = teb_local_planner::VertexPoseSE2; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:12[m[K,
+                 from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/src/teb_ackermann_node.cpp:31[m[K:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:42:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:43:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:84:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:85:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[ 63%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 63%] Built target gtest
+[ 81%] [32mBuilding CXX object CMakeFiles/test_teb_planner.dir/src/planner_manager.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/test_teb_planner.dir/test/test_teb_planner.cpp.o[0m
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:12[m[K,
+                 from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/src/planner_manager.cpp:5[m[K:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:42:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:43:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:84:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:85:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:12[m[K,
+                 from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/test/test_teb_planner.cpp:17[m[K:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:42:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexPoseSE2::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:43:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kread[m[K(std::istream&)[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:84:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:[m[K In member function ‘[01m[Kvirtual bool teb_local_planner::VertexTimeDiff::[01;32m[Kwrite[m[K(std::ostream&) const[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/vertexPoint.h:85:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |     virtual bool write([01;35m[Kstd::ostream& os[m[K) const override { return true; }
+      |                        [01;35m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:11[m[K:
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 1; E = double; VertexXi = teb_local_planner::VertexTimeDiff; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebMultiEdge<D, E>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = double; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  172 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:11[m[K:
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 1; E = double; VertexXi = teb_local_planner::VertexTimeDiff; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/planner_manager.h:11[m[K:
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 1; E = double; VertexXi = teb_local_planner::VertexTimeDiff; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebMultiEdge<D, E>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = double; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  172 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebMultiEdge<D, E>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = double; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:172:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  172 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebBinaryEdge<D, E, VertexXi, VertexXj>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = double; VertexXi = teb_local_planner::VertexPoseSE2; VertexXj = teb_local_planner::VertexPoseSE2; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:140:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:140:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  140 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 2; E = tools::pathInfo; VertexXi = teb_local_planner::VertexPoseSE2; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     virtual bool read([01;35m[Kstd::istream& is[m[K) override { return true; }
+      |                       [01;35m[K~~~~~~~~~~~~~~^~[m[K
+/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h: In instantiation of ‘[01m[Kbool teb_local_planner::BaseTebUnaryEdge<D, E, VertexXi>::[01;32m[Kread[m[K(std::istream&) [35m[K[with int D = 1; E = tools::obstacleInfo; VertexXi = teb_local_planner::VertexPoseSE2; std::istream = std::basic_istream<char>][m[K[m[K’:
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:18:[m[K   required from here
+[01m[K/home/isla/code/teb_ws/src/teb_ackermann_planner/include/teb_ackermann_planner/base_teb_edges.h:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[ 90%] [32m[1mLinking CXX executable teb_ackermann_node[0m
+[ 90%] Built target teb_ackermann_node
+[100%] [32m[1mLinking CXX executable test_teb_planner[0m
+[100%] Built target test_teb_planner
+-- Install configuration: ""
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/lib/teb_ackermann_planner/teb_ackermann_node
+-- Set non-toolchain portion of runtime path of "/home/isla/code/teb_ws/install/teb_ackermann_planner/lib/teb_ackermann_planner/teb_ackermann_node" to ""
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/ament_index/resource_index/package_run_dependencies/teb_ackermann_planner
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/ament_index/resource_index/parent_prefix_path/teb_ackermann_planner
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/ament_prefix_path.sh
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/ament_prefix_path.dsv
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/path.sh
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/environment/path.dsv
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.bash
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.sh
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.zsh
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/local_setup.dsv
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.dsv
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/ament_index/resource_index/packages/teb_ackermann_planner
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/cmake/teb_ackermann_plannerConfig.cmake
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/cmake/teb_ackermann_plannerConfig-version.cmake
+-- Installing: /home/isla/code/teb_ws/install/teb_ackermann_planner/share/teb_ackermann_planner/package.xml
